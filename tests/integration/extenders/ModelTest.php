@@ -443,7 +443,8 @@ class CustomPost extends AbstractEventPost
 
 class CustomRelationClass
 {
-    public function __invoke(User $user) {
+    public function __invoke(User $user)
+    {
         return $user->hasMany(Discussion::class, 'user_id');
     }
 }
